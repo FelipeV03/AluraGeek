@@ -1,0 +1,10 @@
+.carousel-caption{
+    right: 50%;
+    color: rgb(255, 255, 255);
+}
+.carousel-image{
+    max-width: 1440px;
+    height: 352px;
+    width: 100%;
+    object-fit: cover;
+}
