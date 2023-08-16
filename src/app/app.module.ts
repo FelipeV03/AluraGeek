@@ -7,6 +7,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { DevelopmentComponent } from './components/development/development.component'
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ProductosComponent } from './components/productos/productos.component';
     NavbarComponent,
     BannerComponent,
     ProductosComponent,
+    FooterComponent,
+    DevelopmentComponent,
   ],
   imports: [
     BrowserModule,
