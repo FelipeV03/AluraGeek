@@ -1,0 +1,15 @@
+.container{
+    padding: 30px;
+}
+
+.col-md-3{
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ver-todo{
+    font-size: 25px;
+}
