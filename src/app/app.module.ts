@@ -8,7 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DevelopmentComponent } from './components/development/development.component'
+import { DevelopmentComponent } from './components/development/development.component';
+import { LoginComponent } from './components/login/login.component'
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { DevelopmentComponent } from './components/development/development.compo
     ProductosComponent,
     FooterComponent,
     DevelopmentComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

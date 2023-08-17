@@ -3,12 +3,16 @@
   <app-navbar></app-navbar>
 </header>
 <main>
+  <!-- Área para el componente de inicio de sesión -->
+  <router-outlet></router-outlet>
   <!-- Banner -->
-    <app-banner></app-banner>
+  <router-outlet *ngIf="!isLoginRoute" name="banner"></router-outlet>
   <!-- Productos -->
-    <app-productos></app-productos>
+  <router-outlet *ngIf="!isLoginRoute" name="productos"></router-outlet>
 </main>
 <footer>
+  <!-- Formulario Contacto -->
   <app-footer></app-footer>
+  <!-- Información desarrollo -->
   <app-development></app-development>
 </footer>
