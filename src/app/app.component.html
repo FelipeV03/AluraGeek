@@ -6,9 +6,9 @@
   <!-- Área para el componente de inicio de sesión -->
   <router-outlet></router-outlet>
   <!-- Banner -->
-  <router-outlet *ngIf="!isLoginRoute" name="banner"></router-outlet>
+  <router-outlet *ngIf="!isLoginRoute && !isAdminRoute" name="banner"></router-outlet>
   <!-- Productos -->
-  <router-outlet *ngIf="!isLoginRoute" name="productos"></router-outlet>
+  <router-outlet *ngIf="!isLoginRoute && !isAdminRoute" name="productos"></router-outlet>
 </main>
 <footer>
   <!-- Formulario Contacto -->
