@@ -11,7 +11,8 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DevelopmentComponent } from './components/development/development.component';
 import { LoginComponent } from './components/login/login.component';
-import { AdminMenuFormResgistroComponent } from './components/admin-menu-form-resgistro/admin-menu-form-resgistro.component'
+import { AdminMenuFormResgistroComponent } from './components/admin-menu-form-resgistro/admin-menu-form-resgistro.component';
+import { ProductDescriptionComponent } from './components/product-description/product-description.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AdminMenuFormResgistroComponent } from './components/admin-menu-form-re
     DevelopmentComponent,
     LoginComponent,
     AdminMenuFormResgistroComponent,
+    ProductDescriptionComponent,
   ],
   imports: [
     BrowserModule,

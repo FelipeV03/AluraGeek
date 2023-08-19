@@ -13,6 +13,7 @@ export class AppComponent {
   // Variable para determinar si estamos en la ruta de inicio de sesión
   isLoginRoute: boolean = false;
   isAdminRoute: boolean = false;
+  isDescriptionRoute: boolean = false;
 
   constructor(private router: Router) {
     // Utilizar el servicio Router para escuchar los eventos de navegación
@@ -26,7 +27,10 @@ export class AppComponent {
         this.isLoginRoute = (event.url === '/login');
 
         // Verificar si la URL actual es la ruta de administrador
-        this.isAdminRoute =(event.url === '/admin_menu')
+        this.isAdminRoute = (event.url === '/admin_menu')
+
+        // Verificar si la URL actual es la ruta de descripción de productos
+        this.isDescriptionRoute = (event.url === '/product_description')
       }
     });
   }

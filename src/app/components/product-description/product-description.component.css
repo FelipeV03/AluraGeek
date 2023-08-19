@@ -1,0 +1,18 @@
+.container{
+    padding: 30px;
+}
+
+.col-md-6{
+    width: 100%;
+}
+
+.h-100{
+    height: auto;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
