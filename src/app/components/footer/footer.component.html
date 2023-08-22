@@ -17,19 +17,21 @@
 
         <div class="col-md-6 form">
             <h4>Contáctanos</h4>
-            <form class="row g-3">
+            <form class="row g-3" (ngSubmit)="submitForm()">
                 <div class="mb-3">
                     <label for="exampleFormControlInput2" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pepito Pérez">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pepito Pérez"
+                        [(ngModel)]="formValues.nombre" name="nombre">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                        placeholder="name@example.com" [(ngModel)]="formValues.email" name="email">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        [(ngModel)]="formValues.mensaje" name="mensaje"></textarea>
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-success">Enviar</button>

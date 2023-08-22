@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,7 +31,8 @@ import { ProductDescriptionComponent } from './components/product-description/pr
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
-    NzUploadModule
+    NzUploadModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
