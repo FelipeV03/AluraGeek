@@ -2,16 +2,16 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="text-center mb-4">Iniciar Sesión</h2>
-            <form>
+            <form (ngSubmit)="submitForm()">
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="pepitoperez@gmail.com">
+                    <input #inputEmail type="email" class="form-control" id="email" placeholder="pepitoperez@gmail.com" [(ngModel)]="formValues.email" name="email">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    <input #inputPassword type="password" class="form-control" id="password" placeholder="Contraseña" [(ngModel)]="formValues.password" name="password">
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" routerLink="/admin_menu"> Iniciar Sesión</button>
+                <button type="submit" class="btn btn-primary btn-block" > Iniciar Sesión</button>
             </form>
         </div>
     </div>
